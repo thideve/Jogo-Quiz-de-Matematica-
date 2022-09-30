@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>
+    Jogo(Quiz de Matemática)
+    </title>
+
+  <meta name="viewport" content="width=device-width, intial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="game.css">
+
+  <script src="game_login.js"></script>
+
+  </head>
+
+
+  <body id="BodyStyle">
+
+
+    <h4 id="player1_name"></h4> <span id="player1_score"></span>
+
+    <br>
+
+    <h4 id="player2_name"></h4> <span id="player2_score"></span>
+    
+
+    <div class="container">
+      <center>
+        <h2 style="color: white;">Quiz de Matemática!</h2>
+        
+        <h4>
+          <label>Vez de responder:</label>
+        </h4>
+
+        <div id="output">
+          <h3>
+       <span>
+        <label id="primeiroNum">5</label> 
+        <label id="Operador">x</label>
+        <label id="segundoNum">8</label>
+      </span>    
+        
+          </h3>
+
+
+          <br>
+          <br>
+
+          <span>
+            <h4>Resposta:</h4>
+            <input type="text" id="resposta">
+          </span>
+
+          <button id="checar" onclick="checar();">Checar</button>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <hr>
+
+        <div id="Numeros">
+         <h3>Número 1</h3>
+         <input type="input" id="n1" placeholder="Número 1">
+
+
+         <br>
+
+         <h3>Número 2</h3>
+         <input type="text" id="n2" placeholder="Número 2">
+
+         <hr>
+
+         <button type="button" id="enviar" onclick="send();">Enviar a resposta</button>
+        </div>
+      </center>
+
+
+    </div>
+
+  
+  </body>
+
+</html>
